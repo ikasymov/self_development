@@ -17,5 +17,5 @@ from practice.models import Topping, Pizza
 def base_page(request):
 	context = {}
  	context['anymore'] = 's'
-	context['old'] = Topping.objects.all().prefetch_related('pizzas')
+	context['old'] = Pizza.objects.all()
 	return render(request, 'base.html', context)
