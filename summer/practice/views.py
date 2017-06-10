@@ -12,7 +12,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 from practice.models import Topping, Pizza
-
+#tests
 def base_page(request):
 	context = {}
  	context['anymore'] = 's'
